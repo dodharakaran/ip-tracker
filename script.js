@@ -4,7 +4,7 @@ fetch('https://api.ipify.org?format=json')
         const ip = data.ip;
 
         // Fetch location using ipinfo.io
-        fetch(`https://ipinfo.io/${ip}?token=YOUR_TOKEN`) // Replace YOUR_TOKEN with your actual token
+        fetch(`https://ipinfo.io/${ip}?token=dd1e4bc853e99b`) // Replace YOUR_TOKEN with your actual token
             .then(response => response.json())
             .then(locationData => {
                 const location = `${locationData.city}, ${locationData.region}, ${locationData.country}`;
